@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: swift build
+      - name: Package ad-hoc signed app
+        run: ./script/build_and_run.sh --package
+      - name: Verify app bundle
+        run: codesign --verify --deep --strict dist/BarKeep.app
+      - uses: actions/upload-artifact@v4
+        with:
+          name: BarKeep
+          path: |
+            dist/BarKeep-1.0.0.zip
+            dist/BarKeep-1.0.0.zip.sha256
