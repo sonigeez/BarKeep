@@ -8,14 +8,14 @@ jobs:
   build:
     runs-on: macos-15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Build
         run: swift build
       - name: Package ad-hoc signed app
         run: ./script/build_and_run.sh --package
       - name: Verify app bundle
         run: codesign --verify --deep --strict dist/BarKeep.app
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: BarKeep
           path: |
