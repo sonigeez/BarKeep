@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="BarKeep is a free, open-source menu bar organizer for macOS. Hide menu bar clutter without accounts, analytics, or invasive permissions."
+    >
+    <meta name="theme-color" content="#f2f0e8">
+    <meta property="og:title" content="BarKeep — Make room at the top">
+    <meta
+      property="og:description"
+      content="A tiny, private, open-source menu bar organizer for macOS."
+    >
+    <meta property="og:type" content="website">
+    <title>BarKeep — A smaller menu bar for macOS</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="BarKeep home">
+        <span class="mark" aria-hidden="true"><i></i><b>››</b></span>
+        <span>BarKeep</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a class="nav-github" href="https://github.com/sonigeez/BarKeep">GitHub ↗</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Free · open source · macOS 14+</p>
+          <h1>Make room<br>at the top.</h1>
+          <p class="lede">
+            BarKeep tucks menu bar clutter behind one click, then gets out of
+            your way. No account. No tracking. No invasive permissions.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="/downloads/BarKeep-1.0.0.zip">
+              <span>Download BarKeep 1.0</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+            <a class="button button-quiet" href="https://github.com/sonigeez/BarKeep">
+              Read the source ↗
+            </a>
+          </div>
+          <p class="download-note">
+            2.2 MB ZIP · MIT licensed · ad-hoc signed preview
+          </p>
+        </div>
+
+        <div class="demo-shell reveal" data-delay="1">
+          <div class="demo-caption">
+            <span>YOUR MENU BAR, ON A DIET</span>
+            <button class="demo-reset" type="button">Reset demo</button>
+          </div>
+          <div class="desktop" role="group" aria-label="Interactive BarKeep demonstration">
+            <div class="wallpaper-orb orb-one"></div>
+            <div class="wallpaper-orb orb-two"></div>
+            <div class="menu-bar">
+              <div class="apple" aria-hidden="true">●</div>
+              <div class="app-menu" aria-hidden="true">
+                <strong>Finder</strong><span>File</span><span>Edit</span><span>View</span>
+              </div>
+              <div class="status-area">
+                <div class="managed-icons" aria-hidden="true">
+                  <span>◫</span><span>◆</span><span>◉</span><span>⌁</span><span>◐</span>
+                </div>
+                <span class="divider" aria-hidden="true"></span>
+                <button
+                  class="barkeep-toggle"
+                  type="button"
+                  aria-expanded="true"
+                  aria-label="Hide managed menu bar icons"
+                >
+                  <span aria-hidden="true">‹‹</span>
+                </button>
+                <span aria-hidden="true">⌁</span><span aria-hidden="true">◒</span>
+                <time datetime="2026-08-16T09:41">Sun Aug 16&nbsp;&nbsp;9:41 AM</time>
+              </div>
+            </div>
+            <div class="demo-message" aria-live="polite">
+              <span class="message-arrow" aria-hidden="true">↗</span>
+              <strong>Click the chevrons.</strong>
+              <span>Five icons disappear. None are harmed.</span>
+            </div>
+            <div class="shortcut" aria-hidden="true">
+              <kbd>⌥</kbd><kbd>⌘</kbd><kbd>B</kbd>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="statement reveal" aria-label="Product summary">
+        <p>Seventeen tiny icons want your attention.</p>
+        <p class="statement-answer">BarKeep has other plans.</p>
+      </section>
+
+      <section class="how" id="how-it-works">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Three moves. No tutorial academy.</p>
+          <h2>Set it once.<br>Forget it exists.</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-number">01</span>
+            <div>
+              <h3>Put up the divider</h3>
+              <p>Hold Command and drag BarKeep’s divider left of the icons you want managed.</p>
+            </div>
+            <div class="step-visual divider-visual" aria-hidden="true">
+              <span>◉</span><span>◆</span><i></i><b>‹‹</b>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="step-number">02</span>
+            <div>
+              <h3>Click, hover, or shortcut</h3>
+              <p>Use the chevrons, hover over the menu bar, or press Option–Command–B.</p>
+            </div>
+            <div class="step-visual keys-visual" aria-hidden="true">
+              <kbd>⌥</kbd><kbd>⌘</kbd><kbd>B</kbd>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="step-number">03</span>
+            <div>
+              <h3>Enjoy the blank space</h3>
+              <p>Auto-collapse after five seconds to one minute. Or never. You’re in charge.</p>
+            </div>
+            <div class="step-visual calm-visual" aria-hidden="true"><span></span><b>‹‹</b></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="privacy" id="privacy">
+        <div class="privacy-copy reveal">
+          <p class="eyebrow light">Privacy, minus the interpretive dance</p>
+          <h2>BarKeep can’t spy on your menu bar.</h2>
+          <p>
+            It moves its own native macOS controls. It never inspects, captures,
+            or identifies the icons around them. Deliciously limited software.
+          </p>
+          <a href="https://github.com/sonigeez/BarKeep" class="text-link">Audit every line on GitHub ↗</a>
+        </div>
+        <dl class="permission-list reveal" data-delay="1">
+          <div><dt>Accessibility permission</dt><dd>Nope</dd></div>
+          <div><dt>Screen Recording permission</dt><dd>Nope</dd></div>
+          <div><dt>Analytics or telemetry</dt><dd>Nope</dd></div>
+          <div><dt>Account or network access</dt><dd>Still nope</dd></div>
+        </dl>
+      </section>
+
+      <section class="features">
+        <article class="feature feature-wide reveal">
+          <span class="feature-index">A</span>
+          <h3>Native by temperament.</h3>
+          <p>Swift, AppKit, and Apple’s own login-item API. Zero third-party dependencies and zero Electron-shaped regrets.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature-index">B</span>
+          <h3>Multiple displays.</h3>
+          <p>The hidden section accounts for your widest screen instead of losing its nerve on monitor two.</p>
+        </article>
+        <article class="feature feature-accent reveal">
+          <span class="feature-index">C</span>
+          <h3>Always-hidden means always hidden.</h3>
+          <p>Keep the rarely-needed stuff behind a second divider. Option-click when bureaucracy calls.</p>
+        </article>
+        <article class="feature feature-dark reveal">
+          <span class="feature-index">D</span>
+          <h3>Free forever.</h3>
+          <p>No subscription hangover. Fork it, fix it, inspect it, keep it.</p>
+        </article>
+      </section>
+
+      <section class="final-cta reveal">
+        <p class="eyebrow">The top of your screen is expensive real estate.</p>
+        <h2>Evict some icons.</h2>
+        <a class="button button-primary" href="/downloads/BarKeep-1.0.0.zip">
+          <span>Download BarKeep 1.0</span><span aria-hidden="true">↓</span>
+        </a>
+        <p>
+          Requires macOS 14 Sonoma or newer. This preview is ad-hoc signed and
+          not notarized, so macOS may ask you to right-click the app and choose Open.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <a class="wordmark" href="#top">
+        <span class="mark" aria-hidden="true"><i></i><b>››</b></span>
+        <span>BarKeep</span>
+      </a>
+      <p>MIT licensed. Built in the open.</p>
+      <div><a href="https://github.com/sonigeez/BarKeep">Source</a><a href="https://github.com/sonigeez/BarKeep/issues">Issues</a></div>
+    </footer>
+  </body>
+</html>
